@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>로그인</title>
+    <th:block th:replace="include/header :: header"></th:block>
+</head>
+<body>
+<th:block th:replace="include/bodyHead :: bodyHeader"></th:block>
+<h2 th:text="${msg}">상품등록(디테일) 페이지 </h2>
+<div class="form-group">
+    <div>상품id</div>
+    <div th:text="${product.id}"></div>
+    <div>상품이름</div>
+    <div th:text="${product.name}"></div>
+    <div>브랜드</div>
+    <div th:text="${product.brand}"></div>
+
+</div>
+
+</body>
+</html>
